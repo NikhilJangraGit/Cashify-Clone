@@ -56,6 +56,11 @@ body{
   fill: #333;
   color: #333;
 }
+#srch{
+  width: 80vw;
+  background-color: #c6c6c698;
+  display: none;
+}
 #city{
   width: 100px;
   padding: 10px;
@@ -1445,10 +1450,13 @@ footer{
             html, body {
   overflow-x: hidden;
 }
+          main{
+            padding-top: 80px;
+          }
             #nav1 {
                 flex-wrap: wrap;
                 padding: 10px 20px 10px 10px;
-                height: auto;
+                height:40px;
                 justify-content: space-between;
             }
             #logo {
@@ -1459,6 +1467,14 @@ footer{
                 order: 3; /* Move search bar to the next line */
                 width: 100%;
                 margin-top: 10px;
+            }
+            #navsrch{
+              display: none;
+            }
+            #srch{
+              display: flex;
+              background-color: #fafafafa;
+              margin: auto;
             }
             #services{
               width: 85vw;
@@ -1477,10 +1493,6 @@ footer{
                 margin-right: 10px;
             }
             #nav1 button { display: none; } /* Hide login button on mobile nav */
-
-            main {
-                padding-top: 120px; /* Adjust for taller nav */
-            }
        @keyframes slide {
   0% {
     transform: translateX(0);
@@ -1523,7 +1535,7 @@ footer{
             }
             #casourel {
                 height: 300px;
-                margin-top: 50px;
+                margin-top: 20px;
             }
             .slider, .headerContainer, .slide2 img, .slide3 img { height: 300px; }
             .headerText h1 { font-size: 1.8em; }
@@ -1610,6 +1622,9 @@ footer{
             }
             #casourel{
               height: 200px;
+            }
+            #logo{
+              margin: auto;
             }
             .slide2,.slide3,.headerContainer ,.slider{
               height: 200px;
